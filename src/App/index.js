@@ -32,7 +32,17 @@ export default {
         const synSunset = data.sys.sunset;
 
         const date = new Date(synSunset * 1000);
-        const sunset = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+
+        let hours = date.getHours();
+        if (hours < 10) hours = '0' + hours;
+
+        let minutes = date.getMinutes();
+        if (minutes < 10) minutes = '0' + minutes;
+
+        let seconds = date.getSeconds();
+        if (seconds < 10) seconds = '0' + seconds;
+
+        const sunset = `${hours}:${minutes}:${seconds}`;
 
         this.obj.temp = data.main.temp;
         this.obj.data = data.name;

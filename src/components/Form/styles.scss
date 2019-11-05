@@ -1,13 +1,13 @@
 .form-wrapper {
   margin-top: 39px;
   margin-bottom: 33px;
-  width: 458px;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
 
   &__input {
-    width: 290px;
+    width: 63.31877%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
 }
 
 button {
-  width: 155px;
+  width: 33.8427947%;
   height: 60px;
   padding: 0;
   border: none;
